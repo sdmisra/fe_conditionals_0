@@ -11,18 +11,18 @@
   // if it is snowy, print "coat"
   // if it is icy, print "yak traks"
 
-var weather = "sunny"
+var weather = "icy"
 
 if (weather === "sunny") {
-  console.log("sunscreen");
+  console.log("sunscreen")
 } else if (weather === "rainy") {
-  console.log("umbrella");
+  console.log("umbrella")
 } else if (weather === "snowy") {
-  console.log("coat");
+  console.log("coat")
 } else if (weather === "icy") {
-  console.log("yak traks");
+  console.log("yak traks")
 } else {
-  console.log("good to go!");
+  console.log("good to go!")
 }
 
 // Experiment with manipulating the value held in variable 'weather'
@@ -42,10 +42,11 @@ if (weather === "sunny") {
 // Experiment with manipulating the value held within numQuarters
 // to make sure both conditions can be achieved.
 
-var numQuarters = 0
-
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
+var numQuarters = 2
+if(numQuarters >= 2){
+console.log("I have enough money for a gumball")}
+else{
+console.log("I don't have enough money for a gumball")}
 
 
 // #####################
@@ -62,6 +63,12 @@ console.log("I don't have enough money for a gumball");
 // Experiment with manipulating the value held within both variables
 // to make sure all above conditions output what you expect.
 
-var cupsOfFlour = 1;
+var cupsOfFlour = 3;
 var hasSauce = true;
 
+if (cupsOfFlour >= 2 && hasSauce === true){
+  console.log('Rejoice! With the right ingredients in hand, you are entirely capable of making a pizza. The question now is - what toppings?')
+}
+else {
+  console.log('Despair! Tragedy! With the ingredients you currently have, you cannot make a pizza!')
+}
