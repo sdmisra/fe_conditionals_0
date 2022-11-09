@@ -97,15 +97,32 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log(lovesToPlay && lovesTreats)
+// returns true to console
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log(lovesToPlay && lovesDogPark)
+//returns false to console
 
 // Determine if the dog loves to play or loves the dog park
+console.log(lovesToPlay || lovesDogPark)
+//returns true to console
 
 
 // Determine if the dog loves to play and is a puppy
+console.log(lovesToPlay && age)
+//This will return 1 to console, but that does not answer the question "is this a puppy" as we have not defined specifically what a puppy is or is not. 
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+
+// ANSWER: The line evaluates to 1, the reason for that is that we have not defined a variable such as "isPuppy" with a comparison within to define what is TRUE for puppy or FALSE for puppy status. To define what a puppy is, we might use an if / then statement:
+var isPuppy = true
+if (age < 2) {
+    isPuppy = true
+}
+else {
+    isPuppy = false
+}
+// Then, we can retry the statement above:
+
+console.log("Is it true or false that this hound is a young pooch and loves to play?",lovesToPlay && isPuppy)
